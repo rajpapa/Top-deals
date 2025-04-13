@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bolg.css">
+</head>
+<body>
+    <header>
+        <h1>Top Deals</h1>
+      
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <a href="index.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="bolg.html">Blog</a>
+        </nav>
+    </header>
+
+    <section class="blog-section">
+        <h2>📚 Latest from Our Blog</h2>
+        <div class="blog-container">
+      
+          <div class="blog-card">
+            <img src="/blog/blog1.jpg" alt="Gadgets Blog" />
+            <h3>Top 10 Gadgets Under ₹2000 in 2025</h3>
+            <p>Explore our handpicked list of affordable tech gadgets like Bluetooth speakers, smartwatches, and portable chargers that give great value for money.</p>
+            <a href="#">Read More</a>
+          </div>
+      
+          <div class="blog-card">
+            <img src="/blog/blog2.jpg" alt="Affiliate Tips" />
+            <h3>Beginner’s Guide to Affiliate Marketing</h3>
+            <p>Want to earn passive income? Start with affiliate marketing using simple steps like finding products, writing honest reviews, and sharing with your audience.</p>
+            <a href="#">Read More</a>
+          </div>
+      
+          <div class="blog-card">
+            <img src="/blog/blog3.jpg" alt="SEO Tricks" />
+            <h3>5 SEO Tricks to Boost Your Affiliate Site</h3>
+            <p>Learn how keyword research, fast loading speed, mobile optimization, backlinks, and unique content can help your affiliate site rank on Google.</p>
+            <a href="#">Read More</a>
+          </div>
+      
+          <div class="blog-card">
+            <img src="/blog/blog4.jpg" alt="Tech News" />
+            <h3>Latest Tech News You Should Know in April 2025</h3>
+            <p>From Apple launches to smart home trends, check out what’s hot in the tech world. Stay informed and ahead in the affiliate game!</p>
+            <a href="#">Read More</a>
+          </div>
+      
+          <div class="blog-card">
+            <img src="/blog/blog5.jpg" alt="Smartphones Blog" />
+            <h3>Best Budget Smartphones for Students</h3>
+            <p>We review the top 5 smartphones under ₹15,000 that offer amazing battery life, camera, and gaming performance for students and first-time buyers.</p>
+            <a href="#">Read More</a>
+          </div>
+      
+          <div class="blog-card">
+            <img src="/blog/blog6.jpg" alt="Mistakes to Avoid" />
+            <h3>Common Affiliate Mistakes and How to Avoid Them</h3>
+            <p>Don’t waste time and effort—avoid mistakes like spamming links, promoting low-quality products, or ignoring SEO while building your affiliate site.</p>
+            <a href="#">Read More</a>
+          </div>
+     
+        </div>
+        <script src="sricpt.js"></script>
+      </section>
+      
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Trendy Vibes by [Your Name] - Watch the latest desi reels, lifestyle tips, and more!" />
+   <meta name="keywords" content="desi reels, Indian influencer, trendy videos, lifestyle blog, short videos" />
+   <meta name="author" content="[Your Name]" />
+   <title>Trendy Vibes - [Your Name]</title>
+   <link rel="stylesheet" href="blog.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+ </head>
+ <body>
+   <header>
+     <h1>Trendy Vibes</h1>
+     <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+       <i class="fas fa-bars"></i>
+     </button>
+     <nav id="nav-links" aria-label="Main navigation">
+       <a href="index.html">Home</a>
+       <a href="#categories">Categories</a>
+       <a href="#reels">Reels</a>
+       <a href="#collab">Collab</a>
+     </nav>
+   </header>
+ 
+   <section class="hero">
+     <h2>Desi Vibes Only! 🌟</h2>
+     <p>Join me for reels full of masti, tips, and lifestyle!</p>
+     <a href="#reels" class="cta-button">Watch My Reels</a>
+   </section>
+ 
+   <section class="blog-section" id="reels">
+     <h2>🔥 Latest Reels</h2>
+     <div class="blog-container">
+       <div class="blog-card">
+         <div class="thumbnail-wrapper">
+           <img src="/blog/reel1.jpg" alt="Top gadgets reel 2025" loading="lazy" />
+           <i class="fas fa-play play-icon"></i>
+         </div>
+         <h3>Top Gadgets Under ₹2000</h3>
+         <p>A fun reel on budget tech like earbuds and smartwatches!</p>
+         <a href="#">Watch Now</a>
+       </div>
+       <div class="blog-card">
+         <div class="thumbnail-wrapper">
+           <img src="/blog/reel2.jpg" alt="Desi lifestyle reel" loading="lazy" />
+           <i class="fas fa-play play-icon"></i>
+         </div>
+         <h3>My Desi Day</h3>
+         <p>Chai, masti, and vibes – check out this reel!</p>
+         <a href="#">Watch Now</a>
+       </div>
+       <!-- Add more cards as needed -->
+     </div>
+   </section>
+ 
+   <footer>
+     <p>Follow Me:
+       <a href="https://instagram.com/[yourhandle]" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+       <a href="https://youtube.com/[yourhandle]" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+     </p>
+     <p>© 2025 Trendy Vibes. All rights reserved.</p>
+   </footer>
+ 
+   <script>
+     const menuToggle = document.getElementById('menu-toggle');
+     const navLinks = document.getElementById('nav-links');
+ 
+     menuToggle.addEventListener('click', () => {
+       const isActive = navLinks.classList.toggle('active');
+       const icon = menuToggle.querySelector('i');
+       icon.classList.toggle('fa-bars', !isActive);
+       icon.classList.toggle('fa-times', isActive);
+       menuToggle.setAttribute('aria-expanded', isActive);
+     });
+ 
+     // Close menu on link click (mobile)
+     navLinks.querySelectorAll('a').forEach(link => {
+       link.addEventListener('click', () => {
+         navLinks.classList.remove('active');
+         menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+         menuToggle.setAttribute('aria-expanded', 'false');
+       });
+     });
+   </script>
+ </body>
+ </html>
